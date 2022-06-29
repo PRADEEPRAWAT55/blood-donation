@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <script type="text/javascript" src="./js/custom.js"></script>
+  </head>
+
+  <body style="background-color: #e8e8e8">
+    <header id=" navbar">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#myNavbar"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"
+              >DONATE BLOOD<i
+                class="fa fa-droplet text-danger"
+                style="padding-left: 20px"
+              ></i
+            ></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">HOME</a></li>
+              <li class=""><a href="contact.html">CONTACT US</a></li>
+              <li class=""><a href="Reciver-doner-info.php">BLOOD INFO</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                  >REQUIREMENT <span class="caret"></span
+                ></a>
+                <ul class="dropdown-menu dropdown-content">
+                  <li>
+                    <button
+                      type="button"
+                      class="btn"
+                      data-toggle="modal"
+                      data-target="#myModal2"
+                    >
+                      DONATER
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="btn"
+                      data-toggle="modal"
+                      data-target="#myModal1"
+                    >
+                      RECEIVER
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a type="button" data-toggle="modal" data-target="#register"
+                  ><span class="glyphicon glyphicon-user"></span
+                  >&nbsp;&nbsp;SIGH-UP</a
+                >
+              </li>
+              <li>
+                <a type="button" data-toggle="modal" data-target="#login"
+                  ><span class="glyphicon glyphicon-log-in"></span
+                  >&nbsp;&nbsp;LOGIN</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="need" id="need">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-sm-6 col-md-4 col-lg-4"
+            style="height: auto; border-radius: 24px"
+          >
+            <img
+              src="images/doctors.svg"
+              alt="blood img"
+              class="img-responsive img-margin"
+              width="80%"
+              height="80px"
+            />
+          </div>
+          <div class="col-sm-6 col-md-8 col-lg-8">
+            <h3 class="myheading">Need Of blood donation ?</h3>
+            <p class="fbb">
+              Donating Blood is essential to help patients survive surgeries,
+              cancer treatment, chronic illnesses, and traumatic injuries. This
+              lifesaving care starts with one person making a generous donation.
+              The need for blood is constant. But only about 3% of age-eligible
+              people donate blood yearly.
+            </p>
+            <p class="fbb">
+              About 328 million people currently live in the U.S. Each year,
+              approximately 6.8 million people in the U.S donate blood.
+              Annually, this adds up to about 13.6 million units of whole blood
+              collected for donation in the U.S. The Red Cross provides about
+              40% of our nation’s blood and blood cell components to donors.
+              Your blood donations are used for patients in need of surgery,
+              cancer treatment and transfusions for blood loss from traumatic
+              injuries.
+            </p>
+            <p class="fbb">
+              For cancer patients, blood transfusions can act as a resource to
+              implement platelets back into the body after heavy treatments such
+              as chemo or radiation therapy. For cancer patients, blood cells
+              that are made in the bone marrow are often at risk. This lack of
+              blood cell production can cause chronic diseases over time which
+              may affect organs such as the kidneys, spleen and liver.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cannot" id="cannot">
+      <div
+        class="container-fluid"
+        style="margin-top: 20px; margin-bottom: 20px"
+      >
+        <h3 class="myheading">Who can not donate blood ?</h3>
+        <div class="row">
+          <div class="col-sm-6 col-md-8 col-lg-8">
+            <div class="row">
+              <div class="col-xs-1 col-md-1 col-lg-1">
+                <i class="fa-solid fa-check check-color"></i>
+              </div>
+              <div class="col-md-11">
+                <p class="fbb">
+                  If The donor not Come in age group of 19-65 years.
+                </p>
+              </div>
+
+              <div class="col-xs-1 col-md-1 col-lg-1">
+                <i class="fa-solid fa-check check-color"></i>
+              </div>
+              <div class="col-md-11">
+                <p class="fbb">If Weight Less then 50 Kg.</p>
+              </div>
+
+              <div class="col-xs-1 col-md-1 col-lg-1">
+                <i class="fa-solid fa-check check-color"></i>
+              </div>
+              <div class="col-md-11">
+                <p class="fbb">
+                  If you engaged in “at risk” sexual activity in the past 12
+                  months.
+                </p>
+              </div>
+
+              <div class="col-xs-1 col-md-1 col-lg-1">
+                <i class="fa-solid fa-check check-color"></i>
+              </div>
+              <div class="col-md-11">
+                <p class="fbb">Have ever injected recreational drugs.</p>
+              </div>
+
+              <div class="col-xs-1 col-md-1 col-lg-1">
+                <i class="fa-solid fa-check check-color"></i>
+              </div>
+              <div class="col-md-11">
+                <p class="fbb">
+                  Have ever had a positive test for HIV (AIDS virus).
+                </p>
+              </div>
+
+              <div class="col-xs-1 col-md-1 col-lg-1">
+                <i class="fa-solid fa-check check-color"></i>
+              </div>
+              <div class="col-md-11">
+                <p class="fbb">
+                  It is not advisable to donate blood while breast-feeding.
+                </p>
+              </div>
+
+              <div class="col-xs-1 col-md-1 col-lg-1">
+                <i class="fa-solid fa-check check-color"></i>
+              </div>
+              <div class="col-md-11">
+                <p class="fbb">
+                  Travel to areas where mosquito-borne infections are endemic,
+                  e.g. malaria, dengue and Zika virus infections, may result in
+                  a temporary deferral.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4" style="border-radius: 10px">
+            <img
+              src="images/doctor2.svg"
+              alt="doctor img "
+              class="img-responsive img-margin"
+              width="80%"
+            />
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container-fluid" id="">
+        <h3 class="myheading">
+          before and after of blood Donating
+          <i class="fa fa-droplet text-danger" style="padding-left: 20px"></i>
+        </h3>
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="images/495px-Heart_diagram_blood_flow_en.svg.png"
+              alt="blood img"
+              background="transparent"
+              class="img-responsive img-margin"
+              width="60%"
+            />
+          </div>
+          <div class="col-md-8">
+            <h3 class="myheading">
+              Blood fact<i
+                class="fa-regular fa-lightbulb text-danger"
+                style="padding-left: 20px"
+              ></i>
+            </h3>
+            <p class="fbb" style="text-align: justify">
+              Blood Facts Adults have 5 - 6 liters of Blood in their Body Blood
+              should be collected from non remunerated voluntary blood donors
+              using sterile, disposable blood bags & instruments. Donated Blood
+              is tested and separated into components benefiting 3-4 patients
+              The shelf life of Blood components Red Blood Cells (PRBC),
+              Platelet concentrate (PC) and Fresh Frozen Plasma (FFP) is 42
+              days, 5 days and 1 year respectively. The storage conditions these
+              components is also different; RBC at 2 – 8° Centigrade, PC at 20
+              -24° Centigrade and FFP at -30 to -80° Centigrade. These
+              components cannot be stored in normal household Refrigerators.
+            </p>
+            <p class="fbb" style="text-align: justify">
+              It is safe to donate every 3/6 months. It is quick and safe,
+              doesn’t hurt & saves 3 to 4 lives. Blood is recovered very quickly
+              in the body: Plasma volume within 24 - 48 hours, RBC in about 3
+              weeks, Platelets and White Blood cells within minutes. 1 out of 10
+              hospital patients need blood transfusion. Blood is required for
+              Cancer patients, accident victims, blood disorder patients,
+              surgery patients, pre mature Babies.
+            </p>
+          </div>
+        </div>
+        <p class="fbb" style="text-align: justify">
+          The heart is a muscular organ that pumps blood continuously throughout
+          the body. It is comprised of four chambers — the right and left atrium
+          and the right and left ventricle. The four chambers of the heart work
+          together by alternately contracting and relaxing to pump blood
+          throughout the heart. To accomplish this, the heart uses an electrical
+          system to trigger a heartbeat. Essentially, the electrical system is
+          the power source that makes all the heart's functions possible. Blood
+          vessels lead in and out of the chambers, which receive and distribute
+          blood throughout the body. The four chambers of the heart are
+          connected by four valves — the tricuspid, pulmonic, mitral and aortic
+          valves. These valves work like one-way doors, allowing blood to flow
+          in only one direction.
+        </p>
+        <p class="fbb" style="text-align: justify">
+          <span style="color: crimson; text-transform: uppercase"
+            ><b>Blood Circulation</b></span
+          >
+          Heart diagram showing blood circulationAs the heart beats, it pumps
+          blood through a system of blood vessels called the circulatory system.
+          The blood that these vessels carry is essential for the body to
+          function. Blood carries oxygen and nutrients to your body's tissues,
+          assists in the removal of carbon dioxide and waste products and
+          promotes the overall health of the body's tissues. There are three
+          main types of vessels that make up this system:
+        </p>
+        <div class="row">
+          <div class="col-md-6 before">
+            <h3 class="myheading">before</h3>
+            <ul>
+              <li>Get plenty of sleep the night before you plan to donate.</li>
+              <li>Eat a healthy meal before your donation.</li>
+              <li>Drink plenty of water before the donation.</li>
+              <li>
+                Check to see if any medications you are taking or recently took
+                would prevent you from donating.
+              </li>
+              <li>Wear a shirt with sleeves that can be rolled up.</li>
+            </ul>
+          </div>
+          <div class="col-md-6 after">
+            <h3 class="myheading">after</h3>
+            <ul>
+              <li>Drink extra fluids.</li>
+              <li>
+                Avoid strenuous physical activity or heavy lifting for about
+                five hours.
+              </li>
+              <li>
+                If you feel lightheaded, lie down with your feet up until the
+                feeling passes.
+              </li>
+              <li>Keep your bandage on and dry for the next five hours.</li>
+              <li>
+                Consider adding iron-rich foods to your diet to replace the iron
+                lost with blood donation.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-9 quote-box">
+            <h3 class="myheading">
+              Words By Heart
+              <i class="fa fa-heart text-danger" style="padding-left: 20px"></i>
+            </h3>
+            <div class="col-md-3">
+              <div class="blockquote-img">
+                <img src="images/profile1.svg" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-md-9">
+              <blockquote>
+                <p class="quotation-mark text-success">"</p>
+                <p class="quote-text">
+                  – Donating Blood Does Not Only Prevent Cardiovascular Diseases
+                  But Also Helps In Achieving Peace And Satisfaction Of The
+                  Heart
+                </p>
+
+                <hr />
+                <div class="blog-post-actions">
+                  <p class="blog-post-bottom pull-left">Pradeep Singh Rawat</p>
+                  <p class="blog-post-bottom pull-right">
+                    <span class="badge quote-badge">
+                      &nbsp;
+                      <a href="#" class="faculty-icon"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                      &nbsp; &nbsp;
+                      <a href="#" class="faculty-icon"
+                        ><i class="fab fa-linkedin-in"></i></a
+                      >&nbsp; &nbsp;
+                      <a href="#" class="faculty-icon"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                      &nbsp; </span
+                    > 
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <button class="open-button" onclick="openForm()"><i class="fa fa-comments text-light" ></i></button>
+            <div class="chat-popup" id="myForm">
+              <div id="bot">
+                <div id="container">
+                  <div id="header">
+                    GBOT<i
+                      class="fa fa-robot text-light"
+                      style="padding-left: 5px"
+                    ></i>
+                  </div>
+
+                  <div id="body">
+                    <div class="userSection">
+                      <div class="messages user-message"></div>
+                      <div class="seperator"></div>
+                    </div>
+                    <div class="botSection">
+                      <div class="messages bot-reply"></div>
+                      <div class="seperator"></div>
+                    </div>
+                  </div>
+
+                  <div id="inputArea">
+                    <input
+                      type="text"
+                      name="messages"
+                      id="userInput"
+                      placeholder="Please enter your message here"
+                      required
+                      value=""
+                    />
+                    <input type="submit" id="send" value="Send" />
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="open-button" onclick="closeForm()">
+                <i class="fa fa-comments text-light" ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">RECEIVER DETAILS</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="backgrund-img">
+              <form
+                method="POST"
+                action="insert.php"
+                enctype="multipart/form-data"
+              >
+                <!------name-------------->
+                <div class="input-container">
+                  <i class="fa fa-user icon"></i>
+                  <input
+                    class="input-field"
+                    type="text"
+                    placeholder="Username"
+                    name="fname"
+                    required
+                  />
+                </div>
+                <!-------course-------------->
+                <div class="input-container">
+                  <i class="fa fa-user-graduate icon"></i>
+                  <input
+                    class="input-field"
+                    type="text"
+                    placeholder="Course Name"
+                    name="cname"
+                    required
+                  />
+                </div>
+                <!-------section-------------->
+                <div class="input-container">
+                  <i class="fa fa-people-group icon"></i>
+                  <select class="input-field" name="branch" required>
+                    <option selected disabled>Branch</option>
+                    <option>C.S.E</option>
+                    <option>CIVIL</option>
+                    <option>IT</option>
+                    <option>MECHANICAL</option>
+                  </select>
+                </div>
+                <!-------phone-------------->
+                <!-------course-------------->
+                <div class="input-container">
+                  <i class="fa fa-mobile icon"></i>
+                  <input
+                    class="input-field"
+                    type="text"
+                    placeholder="Mobile Number"
+                    name="phone"
+                    required
+                  />
+                </div>
+                <!-------phone-------------->
+                <div class="input-container">
+                  <i class="fa fa-envelope icon"></i>
+                  <input
+                    class="input-field"
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <!-------blood group-------------->
+                <div class="input-container">
+                  <i class="fa fa-droplet icon"></i>
+                  <select class="input-field" name="bgroup" required>
+                    <option selected disabled>Required Blood group</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                    <option>AB-</option>
+                  </select>
+                </div>
+                <!-------phone-------------->
+                <div class="input-container">
+                  <i class="fa fa-certificate icon"></i>
+                  <input
+                    class="input-field"
+                    type="file"
+                    id="img"
+                    name="id"
+                    style="display: none"
+                    required
+                  />
+                  <label for="img">Click me to upload Collage ID</label>
+                </div>
+                <input
+                  type="submit"
+                  value="submit"
+                  name="submit"
+                  class="btn btn-block btn-dark"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">DONATOR DETAILS</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="backgrund-img">
+              <form
+                method="POST"
+                action="insert.php"
+                enctype="multipart/form-data"
+              >
+                <!------name-------------->
+                <div class="input-container">
+                  <i class="fa fa-user icon"></i>
+                  <input
+                    class="input-field"
+                    type="text"
+                    placeholder="Username"
+                    name="fname"
+                  />
+                </div>
+                <!-------course-------------->
+                <div class="input-container">
+                  <i class="fa fa-user-graduate icon"></i>
+                  <input
+                    class="input-field"
+                    type="text"
+                    placeholder="Course Name"
+                    name="cname"
+                  />
+                </div>
+                <!-------section-------------->
+                <div class="input-container">
+                  <i class="fa fa-people-group icon"></i>
+                  <select class="input-field" name="branch">
+                    <option selected disabled>Branch</option>
+                    <option>C.S.E</option>
+                    <option>CIVIL</option>
+                    <option>IT</option>
+                    <option>MECHANICAL</option>
+                  </select>
+                </div>
+                <!-------phone-------------->
+                <div class="input-container">
+                  <i class="fa fa-mobile icon"></i>
+                  <input
+                    class="input-field"
+                    type="text"
+                    placeholder="Mobile Number"
+                    name="phone"
+                  />
+                </div>
+                <!-------Email-------------->
+                <div class="input-container">
+                  <i class="fa fa-envelope icon"></i>
+                  <input
+                    class="input-field"
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                  />
+                </div>
+                <!-------blood group-------------->
+                <div class="input-container">
+                  <i class="fa fa-droplet icon"></i>
+                  <select class="input-field" name="bgroup">
+                    <option value="" selected disabled>
+                      Required Blood group
+                    </option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                    <option>AB-</option>
+                  </select>
+                </div>
+                <div class="input-container">
+                  <i class="fa fa-weight-scale icon"></i>
+                  <input
+                    class="input-field"
+                    type="number"
+                    placeholder="Enter Your Weight"
+                    name="weight"
+                  />
+                </div>
+                <input
+                  type="submit"
+                  name="save"
+                  value="submit"
+                  class="btn btn-block btn-dark"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="login">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">LOGIN DETAILS</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="backgrund-img">
+              <form
+                class="box"
+                action="insert.php"
+                method="POST"
+                enctype="multipart/form-data"
+              >
+                <h3>LOGIN</h3>
+                <input
+                  type="text"
+                  placeholder="email"
+                  required=""
+                  name="email"
+                  required
+                />
+                <input
+                  type="password"
+                  placeholder=" Password"
+                  required=""
+                  name="password"
+                  required
+                />
+                <input type="submit" name="login" value="Login" />
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p class="text-info">
+              New Here ?
+              <a
+                type="button"
+                data-toggle="modal"
+                data-target="#register"
+                data-dismiss="modal"
+                >sign up</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="register">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">REGISTRATION DETAILS</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="backgrund-img">
+              <form
+                method="POST"
+                action="insert.php"
+                enctype="multipart/form-data"
+              >
+                <!------name-------------->
+                <div class="input-container">
+                  <i class="fa fa-user icon"></i>
+                  <input
+                    class="input-field"
+                    type="text"
+                    placeholder="Username"
+                    name="name"
+                    required
+                  />
+                </div>
+                <!-------phone-------------->
+                <div class="input-container">
+                  <i class="fa fa-mobile icon"></i>
+                  <input
+                    class="input-field"
+                    type="text"
+                    placeholder="Mobile Number"
+                    name="phone"
+                    required
+                  />
+                </div>
+                <!-------Email-------------->
+                <div class="input-container">
+                  <i class="fa fa-envelope icon"></i>
+                  <input
+                    class="input-field"
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <!-------course-------------->
+                <div class="input-container">
+                  <i class="fa fa-book icon"></i>
+                  <input
+                    class="input-field"
+                    type="text"
+                    placeholder="course"
+                    name="cname"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <div class="input-container form-group">
+                    <i class="fa fa-key icon"></i>
+                    <input
+                      class="input-field"
+                      type="password"
+                      placeholder="password"
+                      name="password"
+                      required
+                    />
+                  </div>
+                  <div class="form-group input-container">
+                    <i class="fa fa-key icon"></i>
+                    <input
+                      class="input-field"
+                      type="password"
+                      placeholder="Confirm Password"
+                      name="cpassword"
+                      required
+                    />
+                  </div>
+                </div>
+                <input
+                  type="submit"
+                  value="Register"
+                  name="register"
+                  class="btn btn-block btn-dark"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p class="text-info">
+              New Here ?
+              <a
+                type="button"
+                id="abc"
+                data-toggle="modal"
+                data-target="#login"
+                data-dismiss="modal"
+                >login In</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 myfooter">
+            <h4>all &copy; reserved by pradeep rawat</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      document.querySelector("#send").addEventListener("click", async () => {
+        let xhr = new XMLHttpRequest();
+        var userMessage = document.querySelector("#userInput").value;
+
+        let userHtml =
+          '<div class="userSection">' +
+          '<div class="messages user-message text-primary">' +
+          userMessage +
+          "</div>" +
+          '<div class="seperator"></div>' +
+          "</div>";
+
+        document.querySelector("#body").innerHTML += userHtml;
+
+        xhr.open("POST", "chatbot.php");
+        xhr.setRequestHeader(
+          "Content-type",
+          "application/x-www-form-urlencoded"
+        );
+        xhr.send(`messageValue=${userMessage}`);
+
+        xhr.onload = function () {
+          let botHtml =
+            '<div class="botSection">' +
+            '<div class="messages bot-reply text-success">' +
+            this.responseText +
+            "</div>" +
+            '<div class="seperator"></div>' +
+            "</div>";
+          document.querySelector("#body").innerHTML += botHtml;
+        };
+      });
+    </script>
+  </body>
+</html>
